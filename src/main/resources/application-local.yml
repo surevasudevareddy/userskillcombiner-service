@@ -1,0 +1,17 @@
+fegin:
+  skill:
+    url: http://localhost:8082/skillService/
+  user:
+    url: http://localhost:8081/userService/
+frigne:
+  userprofile:
+    kafka:
+      url: http://localhost:8087/user/messaging/
+logging:
+  level:
+    web: DEBUG
+server:
+  port: 8083
+spring:
+  application:
+    name: user-skill-combiner-service

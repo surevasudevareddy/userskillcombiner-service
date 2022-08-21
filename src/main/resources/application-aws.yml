@@ -1,0 +1,17 @@
+fegin:
+  skill:
+    url: http://ec2-13-233-206-92.ap-south-1.compute.amazonaws.com:8082/skillService/
+  user:
+    url: http://ec2-13-233-206-92.ap-south-1.compute.amazonaws.com:8081/userService/
+frigne:
+  userprofile:
+    kafka:
+      url: http://ec2-15-206-84-52.ap-south-1.compute.amazonaws.com:8087/user/messaging/
+logging:
+  level:
+    web: DEBUG
+server:
+  port: 8083
+spring:
+  application:
+    name: user-skill-combiner-service
