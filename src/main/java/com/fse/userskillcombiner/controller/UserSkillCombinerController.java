@@ -94,7 +94,7 @@ public class UserSkillCombinerController {
             return skillClient.saveSkill(skl);
         }).collect(Collectors.toList());
 
-        userl.setSkill(skillList);
+        userl.setSkill(skillClient.getUserSkillByUserId(userl.getId()));
 
         //Post user to Kafka messaging by calling service
         this.userProfileKafkaClient.postUserProfile(userl);
